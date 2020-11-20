@@ -20,6 +20,7 @@ def load_library(path)
           emoticon_hash[name][emoticon_set] = []
           binding.pry
         end
+      end
     end
   end
 end
