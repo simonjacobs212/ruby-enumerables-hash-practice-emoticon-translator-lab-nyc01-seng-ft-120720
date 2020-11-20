@@ -11,8 +11,8 @@ def load_library(path)
 
   emoticons.each do |name, emoticon_set|
     emoticon_hash[name] = {
-      :japanese => emoticon_set[0],
-      :english => emoticon_set[1]
+      :japanese => emoticon_set[1],
+      :english => emoticon_set[0]
     }
     binding.pry
   end
