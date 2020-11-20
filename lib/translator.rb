@@ -28,6 +28,7 @@ def get_english_meaning(path, emoticon)
   emoticons2 = load_library(path)
   emoticons.each do |key, value|
     if value.include?(emoticon)
+      return key
       binding.pry
     end
   end
