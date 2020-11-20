@@ -30,7 +30,7 @@ def get_english_meaning(path, emoticon)
     if value.include?(emoticon)
       return key
     end
-    return "Sorry, that emoticon was not found"
   end
+  return "Sorry, that emoticon was not found"
 end
   # code goes here
