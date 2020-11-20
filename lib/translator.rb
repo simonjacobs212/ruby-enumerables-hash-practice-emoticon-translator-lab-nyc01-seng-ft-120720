@@ -9,12 +9,10 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   emoticon_hash = Hash.new
 
-  emoticon_hash[:names] = Hash.new
-
   emoticons.each do |name, emoticon_set|
     emoticon_set.each do |e|
-      if !emoticon_hash[:names][name]
-        emoticon_hash[:names][name] = Hash.new
+      if !emoticon_hash[name]
+        emoticon_hash[name] = Hash.new
         binding.pry
       end
     end
