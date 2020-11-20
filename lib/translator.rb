@@ -10,6 +10,8 @@ def load_library(path)
   emoticon_hash = Hash.new
 
   emoticon_hash[:names] = Hash.new
+
+  emoticons.each do |name, emoticon_set|
   binding.pry
 
 end
