@@ -26,7 +26,7 @@ end
 def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
   emoticons.each do |key, language_set|
-    if value.include?(emoticon)
+    if language_set.include?(emoticon)
       return key
     end
   end
