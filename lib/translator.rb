@@ -14,7 +14,6 @@ def load_library(path)
       :japanese => emoticon_set[1],
       :english => emoticon_set[0]
     }
-    binding.pry
   end
 end
 
