@@ -27,7 +27,7 @@ def get_english_meaning(path, emoticon)
   emoticons = YAML.load_file(path)
   emoticons.each do |key, value|
     if value.include?(emoticon)
-    binding.pry
+    # binding.pry
   end
 end
   # code goes here
