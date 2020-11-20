@@ -13,8 +13,9 @@ def load_library(path)
     emoticon_set.each do |e|
       if !emoticon_hash[name]
         emoticon_hash[name] = Hash.new
-      end
         binding.pry
+      end
+
     end
   end
 end
