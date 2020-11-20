@@ -16,9 +16,8 @@ def load_library(path)
       if !emoticon_hash[:names][name]
         emoticon_hash[:names][name] = []
       end
-      if !emoticon_hash[name][emoticon_set]
-        emoticon_hash[name][emoticon_set] = []
-        binding.pry
+      if !emoticon_hash[:names][name][emoticon_set]
+        emoticon_hash[:names][name][emoticon_set] = []
       end
     end
   end
