@@ -26,8 +26,8 @@ end
 def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
   emoticons.each do |key, language_set|
-    binding.pry
     if language_set[:japanese].include?(emoticon)
+      binding.pry
       return key
     end
   end
