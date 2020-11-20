@@ -14,7 +14,6 @@ def load_library(path)
   emoticons.each do |name, emoticon_set|
     emoticon_hash[:names].push(name)
   end
-  
   binding.pry
 
 end
