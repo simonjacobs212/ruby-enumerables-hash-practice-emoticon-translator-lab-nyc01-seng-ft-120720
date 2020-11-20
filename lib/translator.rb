@@ -30,7 +30,7 @@ def get_english_meaning(path, emoticon)
     if value.include?(emoticon)
       return key
     else
-      "I'm sorry, you're fucked!"
+      return "I'm sorry, you're fucked!"
       # binding.pry
     end
   end
