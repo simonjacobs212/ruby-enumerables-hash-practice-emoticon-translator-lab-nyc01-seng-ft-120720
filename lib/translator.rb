@@ -1,11 +1,15 @@
 # require modules here
+require 'pry'
 require 'yaml'
 
 
-def load_library
-  library = YAML.load(File.read("emoticons.yml"))
-  library
+
+
+def load_library(path)
+  emoticons = YAML.load_file(path)
+  emoticon_hash = Hash.new
 end
+
 
 def get_japanese_emoticon
   # code goes here
