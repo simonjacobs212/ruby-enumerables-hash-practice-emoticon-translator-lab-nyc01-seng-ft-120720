@@ -29,10 +29,9 @@ def get_english_meaning(path, emoticon)
   emoticons.each do |key, value|
     if value.include?(emoticon)
       return key
-    else
-      return "I'm sorry, you're fucked!"
       # binding.pry
     end
+    return "Sorry, that emoticon was not found"
   end
 end
   # code goes here
