@@ -12,8 +12,6 @@ def load_library(path)
   emoticon_hash[:japanese] = Hash.new
   emoticon_hash[:english] = Hash.new
 
-  binding.pry
-
 end
 
 
