@@ -10,6 +10,10 @@ def load_library(path)
   emoticon_hash = Hash.new
 
   emoticons.each do |name, emoticon_set|
+    emoticon_hash[name] = {
+      :japanese => emoticon_set[0]
+      :english => emoticon_set[1]
+    }
     
   end
 end
