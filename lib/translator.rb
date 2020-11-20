@@ -29,6 +29,8 @@ def get_english_meaning(path, emoticon)
   emoticons.each do |key, value|
     if value.include?(emoticon)
       return key
+    else
+      "I'm sorry, you're fucked!"
       binding.pry
     end
   end
