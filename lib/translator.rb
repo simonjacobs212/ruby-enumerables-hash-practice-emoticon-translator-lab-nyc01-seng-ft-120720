@@ -22,7 +22,7 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticons = load_library(path)
   emoticons.each do |key, language_set|
-    if language_set[:english].include?(emoticon)
+    if language_set[:english] == emoticon
       return language_set[:japanese]
     end
   end
