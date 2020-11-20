@@ -10,7 +10,8 @@ def load_library(path)
   emoticon_hash = Hash.new
 
   emoticon_hash[0] = Hash.new
-  
+
+  emoticon_hash << emoticons
   binding.pry
 
 end
