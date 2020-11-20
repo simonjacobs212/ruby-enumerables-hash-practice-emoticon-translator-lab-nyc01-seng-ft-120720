@@ -16,14 +16,12 @@ def load_library(path)
     if !emoticon_hash[:names][name]
       emoticon_hash[:names][name] = []
     end
-      if
+    if !emoticon_hash[name][emoticon_set]
+      emoticon_hash[name][emoticon_set] = []
       binding.pry
-
+    end
   end
-
-
 end
-
 
 def get_japanese_emoticon
   # code goes here
