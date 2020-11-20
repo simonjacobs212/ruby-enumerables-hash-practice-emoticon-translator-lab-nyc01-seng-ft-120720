@@ -26,7 +26,6 @@ end
 def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
   emoticons2 = YAML.load_file(path)
-
   binding.pry
 end
   # code goes here
