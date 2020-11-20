@@ -13,12 +13,13 @@ def load_library(path)
 
   emoticons.each do |name, emoticon_set|
     name.each do |emoticon_set|
-    if !emoticon_hash[:names][name]
-      emoticon_hash[:names][name] = []
-    end
-    if !emoticon_hash[name][emoticon_set]
-      emoticon_hash[name][emoticon_set] = []
-      binding.pry
+      if !emoticon_hash[:names][name]
+        emoticon_hash[:names][name] = []
+      end
+      if !emoticon_hash[name][emoticon_set]
+        emoticon_hash[name][emoticon_set] = []
+        binding.pry
+      end
     end
   end
 end
