@@ -14,7 +14,6 @@ def load_library(path)
 
   binding.pry
 
-  end
 end
 
 
