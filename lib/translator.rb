@@ -29,7 +29,6 @@ def get_english_meaning(path, emoticon)
   emoticons.each do |key, value|
     if value.include?(emoticon)
       return key
-      # binding.pry
     end
     return "Sorry, that emoticon was not found"
   end
