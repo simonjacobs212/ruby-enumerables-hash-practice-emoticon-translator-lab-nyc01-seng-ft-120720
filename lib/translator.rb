@@ -12,7 +12,7 @@ def load_library(path)
   emoticon_hash[:names] = Hash.new
 
   emoticons.each do |name, emoticon_set|
-    name.each do |emoticon_set|
+    emoticon_set.each do |e|
       if !emoticon_hash[:names][name]
         emoticon_hash[:names][name] = []
       end
