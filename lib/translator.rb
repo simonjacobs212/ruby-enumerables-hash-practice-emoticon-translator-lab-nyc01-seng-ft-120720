@@ -20,9 +20,9 @@ def load_library(path)
       emoticon_hash[name][emoticon_set] = []
       binding.pry
     end
-    end
   end
 end
+
 
 def get_japanese_emoticon
   # code goes here
